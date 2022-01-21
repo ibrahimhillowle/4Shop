@@ -6,8 +6,8 @@
 		@foreach($products as $product)
 			<a class="product-row no-link" href="{{ route('products.show', $product) }}">
 				<img src="{{ url($product->image ?? 'img/placeholder.jpg') }}" alt="{{ $product->title }}" class="rounded">
-				<div class="product-body">
-					<div>
+				<div class="product-body flex_container">
+					<div class = "product-detail">
 						<h5 class="product-title"><span>{{ $product->title }}</span><em>&euro;{{ $product->price }}</em></h5>
 						@unless(empty($product->description))
 							<p>{{ $product->description }}</p>

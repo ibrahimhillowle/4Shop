@@ -79,6 +79,26 @@ header{
 .product-body{
 	width: 50%;
 	padding: 1em 2em;
+
+
+}
+
+.flex_container{
+    display: flex;
+  justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+
+.product-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn  , btn-primary{
+
 }
 
 .products .form-control{
